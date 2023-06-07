@@ -1,0 +1,95 @@
+html{
+    background: url(https://cdn.discordapp.com/attachments/981265675018461196/986740177269567558/unknown.png);
+    background-size: cover;
+    background-attachment:fixed;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+/*HEADER*/
+
+header{
+    width: 95%;
+    height: 10vh;
+    background-color: #18191bcb;
+    border: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 90%;
+    padding: 0% 2.5% 0% 2.5%;
+}
+
+header a{
+    color: #FFFFFF;
+}
+
+nav{
+    text-align: center;
+}
+
+.search {
+    width: 25%;
+    display: flex;
+}
+  
+.searchTerm {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #fff;
+}
+  
+.searchTerm:focus{
+    color: #000;
+}
+  
+.searchButton {
+    width: 10%;
+    border: 1px solid #000;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+/*FIN HEADER*/
+
+.fond{
+    background: url(https://cdn.discordapp.com/attachments/981265675018461196/986740177269567558/unknown.png);
+    background-size: cover;
+    background-attachment:fixed;
+}
+/*FOOTER*/
+
+footer{
+    width: 95%;
+    height: 10vh;
+    background-color: #193c81cb;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    bottom: 0%;
+    gap: 35%;
+    padding: 0% 2.5% 0% 2.5%;
+}
+
+footer p{
+    margin-left: 2%;    
+}
+
+/*FIN FOOTER*/

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_page.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <title>FORUM</title>
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: rgba(220, 220, 220, 0.753);
+}
+
+/*HEADER*/
+
+header{
+    width: 95%;
+    height: 10vh;
+    background-color: #18191bcb;
+    border: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 40%;
+    padding: 0% 2.5% 0% 2.5%;
+}
+
+header a{
+    color: #FFFFFF;
+}
+
+nav{
+    text-align: center;
+}
+
+.search {
+    width: 25%;
+    display: flex;
+}
+  
+.searchTerm {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #fff;
+}
+  
+.searchTerm:focus{
+    color: #000;
+}
+  
+.searchButton {
+    width: 10%;
+    border: 1px solid #000;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+/*FIN HEADER*/
+.warpper{
+    border: #000 solid 2px;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 95%;
+    height: 10vh;
+    background-color: #18191bcb;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    bottom: 0%;
+    gap: 35%;
+    padding: 0% 2.5% 0% 2.5%;
+}
+
+footer p{
+    margin-left: 2%;    
+}
+
+/*FIN FOOTER*/
+        </style>
+</head>
+<body>
+    <header>
+        <a href="/post"><h1>FORUM</h1></a>
+        
+        <nav>
+            <a href="/">CONNEXION</a>
+            <a href="/register">INSCRIPTION</a>
+        </nav>
+    </header>
+
+    <div class="titre">
+        <h1>{{ .Title }}</h1>
+        
+    </div>
+    <div class="wrapper">
+        <div class="nom">
+            <h2>{{ .Username }}</h2>
+            <div class="message">
+                <h3>{{.Post}}</h3>
+            </div>
+            <!-- <script>
+            function changerpuce(imgid) {
+ 
+                var img = document.getElementById(imgid);
+                 
+                if (img.src.match("https://cdn.discordapp.com/attachments/975669869569794099/986558900633501706/unknown.png")) {
+     
+                    img.src = "https://cdn.discordapp.com/attachments/975669869569794099/986558900843208714/unknown.png";
+                }
+                else {
+     
+                    img.src = "https://cdn.discordapp.com/attachments/975669869569794099/986558900633501706/unknown.png";
+     
+                }
+     
+            }
+            function changerimage(imgid2) {
+ 
+                var img = document.getElementById(imgid2);
+
+                if (img.src.match("https://cdn.discordapp.com/attachments/975669869569794099/986559256125931540/unknown.png")) {
+
+                    img.src = "https://cdn.discordapp.com/attachments/975669869569794099/986559256448880650/unknown.png";
+                }
+                else {
+
+                    img.src = "https://cdn.discordapp.com/attachments/975669869569794099/986559256125931540/unknown.png";
+
+                }
+
+            }
+            </script> -->
+            
+        </div>
+        <img id="toto" src="https://cdn.discordapp.com/attachments/975669869569794099/986558900633501706/unknown.png"  id="button" onclick="changerpuce('toto')" alt="Mon image" />
+        <img id="tata" src="https://cdn.discordapp.com/attachments/975669869569794099/986559256125931540/unknown.png"  id="button" onclick="changerimage('tata')" alt="Mon image" />
+    </div>
+    <div class="commentaires">
+        <form method="post">
+            <p>
+                <label for="ameliorer">
+                Tu as quelque chose a dire?
+                </label>
+                <br>
+                
+                <textarea name="comment" id="ameliorer" rows="10" cols="100">
+                </textarea>       
+            </p>
+            <input type="submit">
+        </form>
+    </div>
+    {{range .Comments}}
+    <p>{{.Username}}</p>
+    <h2>{{.Post}}</h2>
+    {{end}}
+
+    <footer>
+        <p id="contact">Contact : 07 81 27 36 84 | &copy; 2022, Forum</p>
+    </footer>
+</body>
+
+</html>

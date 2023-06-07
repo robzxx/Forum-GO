@@ -1,0 +1,117 @@
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: grey;
+}
+
+header{
+    width: 95%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 35%;
+    padding: 0% 2.5% 0% 2.5%;
+    border-bottom: 5px solid black;
+}
+
+nav{
+    text-align: center;
+}
+
+.search {
+    width: 22%;
+    display: flex;
+}
+  
+.searchTerm {
+    width: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #fff;
+}
+  
+.searchTerm:focus{
+    color: #000;
+}
+  
+.searchButton {
+    width: 10%;
+    
+    border: 1px solid #000;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 90%;
+    height: 50%;
+    padding: 5% 0% 10% 10%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background: url(https://cdn.discordapp.com/attachments/975669869569794099/983698271765692456/unknown.png);
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+#listes_forums{
+    width: 30%;
+    height: 50vh;
+    padding: 2%;
+    background-color: rgba(168, 61, 61, 0.5);
+    box-shadow: 5px 5px 5px 5px #92929265 ;
+}
+
+.liste{
+    padding: 1.5%;
+}
+
+
+article {
+    width: 15%;
+    height: 50vh;
+    padding: 2%;
+    background-color: rgba(168, 61, 61, 0.5);
+    box-shadow: 5px 5px 5px 5px #92929265 ;
+} 
+
+h1{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    
+}
+footer p{
+    margin-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 2%;
+}
+.reseau{
+    width: 97%;
+    height: 5vh;
+    text-align: center;
+    padding: 1.5%;
+    background-color: #929292;
+}

@@ -1,0 +1,58 @@
+
+/* html{
+    background: url(https://cdn.discordapp.com/attachments/981265675018461196/986740177269567558/unknown.png);
+    background-size: cover;
+    background-attachment:fixed;
+} */
+
+.fond{
+    background: url(https://cdn.discordapp.com/attachments/981265675018461196/986740177269567558/unknown.png);
+    background-size: cover;
+    background-attachment:fixed;
+}
+#container{
+    width:35%;
+    height: 3vh;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+form {
+    border-radius: 20px;
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+input[type=text], input[type=email], input[type=password], input[type=mdpcomf] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #6495ED;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #6495ED;
+    border: 1px solid #6495ED;
+}

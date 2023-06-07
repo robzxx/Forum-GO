@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_connexion.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <header>
+        <a href="/post"><h1>FORUM</h1></a>
+        
+        <nav>
+            <a href="/">CONNEXION</a>
+            <a href="/register">INSCRIPTION</a>
+        </nav>
+    </header>
+    <div id="container">
+
+        <form method="post">
+            <div class="total">
+                <div class="gauche">
+                    <h1>Sujet :</h1>
+                    <select name="topic" onChange="choix(this.form)">
+                        <option selected>Choisissez un sujet</option>
+                        <option>Sport</option>
+                        <option>Cinema</option>
+                        <option>Art</option>
+                        <option>Jeux vidéos</option>
+                        <option>Informatique</option>
+                        <option>Musique</option>
+                        <option>Cuisine</option>
+                        <option>Mode</option>
+                    </select>
+                </div>
+                <div class="droite">
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <label for="ameliorer">
+                            Titre
+                            </label>
+                            <br>
+                                
+                            <textarea name="title" id="ameliorer" rows="2" cols="90">
+                            </textarea>   
+
+
+                            <label for="ameliorer">
+                            Tu as quelque chose a dire?
+                            </label>
+                            <br>
+                            
+                            <textarea name="post" id="ameliorer" rows="10" cols="90">
+                            </textarea>       
+                        </p>
+                </div>
+            </div>
+            <input type="submit">
+        </form>
+
+        <footer>
+            <p id="contact">Contact : 07 81 27 36 84 | &copy; 2022, Forum</p>
+                
+        </footer>
+
+    </div>
+</body>
+</html>

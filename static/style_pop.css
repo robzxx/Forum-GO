@@ -1,0 +1,18 @@
+.pop{
+    background-color: aliceblue;
+    width: 25%;
+    height: 7rem;
+    border-radius: 60px;
+    border: black solid 3px;
+}
+.pop input[type=submit] {
+    width: 25%;
+    
+    margin-left: 25%;
+}
+h1{
+    font-size:xx-small;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 20px;
+}

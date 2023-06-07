@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <title>FORUM</title>
+</head>
+<body>
+    <header>
+        <a href="/post"><h1>FORUM</h1></a>
+        
+        <nav>
+            <a href="/">CONNEXION</a>
+            <a href="/register">INSCRIPTION</a>
+        </nav>
+        
+    </header>
+    
+    <section class="wrapper">
+        
+        
+        <section id="listes_forums">
+            <a href="/new_post">
+                <input type="button" value="create a POST">
+            </a>
+            <h1>FORUM</h1>
+            <hr>
+            <div class="liste">
+                {{ range .}}
+                <a href= "/post/{{.Id}}" >
+                <p>{{.Username}}</p>
+                <p>{{.Title}}</p>
+                <br>
+                </a>
+                {{ end }}
+            </div>
+        </section>
+
+        <article id="la_une">
+            <div class="top">
+                <h1>Sujet :</h1>
+                <h2>Soyez respectueux sur notre site.</h2>
+                <form method="post">
+                    <select name="topic" onChange="choix(this.form)">
+                        <option selected>Choisissez un sujet</option>
+                        <option>Sport</option>
+                        <option>Cinema</option>
+                        <option>Art</option>
+                        <option>Jeux vidéos</option>
+                        <option>Informatique</option>
+                        <option>Musique</option>
+                        <option>Cuisine</option>
+                        <option>Mode</option>
+                    </select>
+
+                    <input type="submit">
+                </form>
+            </div>
+        </article>
+    </section>
+    
+
+    <div class="reseau">
+        <h3>CONTACT US</h3>
+        <footer>
+            <p id="contact">Contact : 07 81 27 36 84 | &copy; 2022, Forum</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

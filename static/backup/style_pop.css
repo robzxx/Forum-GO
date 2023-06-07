@@ -1,0 +1,26 @@
+.pop{
+    background-color: aliceblue;
+    width: 35%;
+    height: 10rem;
+    border-radius: 60px;
+    border: black solid 3px;
+}
+.pop input[type=submit] {
+    width: 50%;
+    
+    margin-left: 25%;
+}
+.pop h1{
+    font-size: small;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 20px;
+}
+.fakepop{
+    background-color: aliceblue;
+    margin-left: 10%;
+    width: 15%;
+    height: 5rem;
+    border-radius: 60px;
+    border: black solid 3px;
+}
